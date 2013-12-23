@@ -36,7 +36,7 @@ system user account has the right privileges, run the following commands
 from your command prompt:
 
     psql -c "CREATE DATABASE richmond;"
-    psql -d richmond "CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA public;"
+    psql -d richmond -c "CREATE EXTENSION IF NOT EXISTS postgis WITH SCHEMA public;"
 
 Now you should have a PostGIS ready database.
 
